@@ -45,6 +45,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Ejecutar pruebas
+        shell: bash
         run: |
           dotnet test \
             --configuration Release \
